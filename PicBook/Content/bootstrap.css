@@ -2557,6 +2557,7 @@ input[type="checkbox"] {
 }
 input[type="file"] {
   display: block;
+  
 }
 input[type="range"] {
   display: block;
@@ -4201,6 +4202,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   min-height: 60px;
   margin-bottom: 21px;
   border: 1px solid transparent;
+ 
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4310,6 +4312,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 19px;
   line-height: 21px;
   height: 60px;
+  
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -7063,11 +7066,10 @@ article .author  {
 }
 .navbar-transperent {
     background-color: rgba(0,0,0,0.7);
+   
 }
- .navbar-transperent-text-color {
-     background-color:red;
+ 
  }
  .italic-style{
      font-style:italic;
  }
- 

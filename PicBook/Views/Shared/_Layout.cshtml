@@ -11,8 +11,16 @@
     <div class="navbar navbar-transperent navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
+                @if ((System.Web.HttpContext.Current.User != null) && System.Web.HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    <div class="btn pull-right">
+                        <img  class ="img-circle pull-right" src=" @Url.Action("UserPhotos", "Home") " onerror="this.src='/img/ProfilePicAlt.png'" height="48" width="48"  />
+                    </div>
+
+
+                }               
                 <button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                   
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
@@ -26,7 +34,7 @@
     <div class="container body-content">
         @RenderBody()
         <footer class="pull-right">
-            <p>&copy; @DateTime.Now.Year - Bachitata</p>
+            <p >&#x1F405; @DateTime.Now.Year - Vrachanskite tigri</p>
         </footer>
     </div>
     
