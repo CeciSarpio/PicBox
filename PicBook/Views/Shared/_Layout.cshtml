@@ -13,6 +13,7 @@
             <div class="navbar-header">
                 @if ((System.Web.HttpContext.Current.User != null) && System.Web.HttpContext.Current.User.Identity.IsAuthenticated)
                 {
+                   
                     <div class="btn pull-right">
                         <img  class ="img-circle pull-right" src=" @Url.Action("UserPhotos", "Home") " onerror="this.src='/img/ProfilePicAlt.png'" height="48" width="48"  />
                     </div>

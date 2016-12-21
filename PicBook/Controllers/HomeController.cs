@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace PicBook.Controllers
 {
@@ -57,19 +58,10 @@ namespace PicBook.Controllers
         {
             return View();
         }
-
-        public ActionResult About()
+        public ActionResult GetUsers()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            var users = Membership.GetAllUsers();
+            return View(users);
         }
     }
 }
