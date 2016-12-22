@@ -1118,8 +1118,12 @@ html {
 body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
-  line-height: 1.42857143;
-  background-image:url("../img/abstract-paper-backgrounds-powerpoint.jpg")
+  background-image:url('../img/old-paper-texture1 - Copy.jpg');
+  background-repeat:no-repeat;
+background-size:cover;
+/*background-position:center;*/
+
+
   /*color: #2c3e50;
   background-color: white;*/
 }
@@ -2557,6 +2561,7 @@ input[type="checkbox"] {
 }
 input[type="file"] {
   display: block;
+  
 }
 input[type="range"] {
   display: block;
@@ -4201,6 +4206,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   min-height: 60px;
   margin-bottom: 21px;
   border: 1px solid transparent;
+ 
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4310,6 +4316,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 19px;
   line-height: 21px;
   height: 60px;
+  
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -7063,11 +7070,10 @@ article .author  {
 }
 .navbar-transperent {
     background-color: rgba(0,0,0,0.7);
+   
 }
- .navbar-transperent-text-color {
-     background-color:red;
+ 
  }
  .italic-style{
      font-style:italic;
  }
- 

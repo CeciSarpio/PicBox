@@ -6,8 +6,8 @@ namespace PicBook.Models
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
-        [Display(Name = "Email")]
-        public string Email { get; set; }
+        [Display(Name = "Nickname")]
+        public string Nickname { get; set; }
     }
 
     public class ExternalLoginListViewModel
@@ -49,15 +49,15 @@ namespace PicBook.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Email")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "Nickname")]
+        [StringLength(50)]
+        public string Nickname { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }
-
+        
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
     }
@@ -79,6 +79,9 @@ namespace PicBook.Models
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }
+
+        [Display(Name = "UserPhoto")]
+        public byte[] UserPhoto { get; set; }
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
