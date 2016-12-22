@@ -1,0 +1,27 @@
+﻿@model List<PicBook.Models.PhotoArticle>
+@{
+    ViewBag.Title = "List";
+}
+<h1 align="center">
+    Your Photos
+</h1>
+<br />
+<br>
+<div class="container">
+    <div align="center">
+        @foreach (var photoArticle in Model)
+        {
+            <img style="border:solid" src="data:image;base64,@System.Convert.ToBase64String(photoArticle.Image)" width="800" height="800" />
+            <article>
+                <p style="font-size:180%; font-family:Verdana">
+                    @photoArticle.descprition
+                </p>
+                <footer style="font-size:130%; font:italic">
+                    By:  @photoArticle.Author.UserName
+                </footer>
+
+            </article>
+        }
+    </div>
+</div>
+

@@ -198,6 +198,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PhotoArticleController.cs" />
     <Compile Include="Databas.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -207,6 +208,7 @@
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\BlogDbContext.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PhotoArticle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -217,8 +219,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\20150408_161809.jpg" />
+    <Content Include="img\20150421_192024_Richtone%28HDR%29.jpg" />
+    <Content Include="img\20150704_182352_Richtone%28HDR%29.jpg" />
+    <Content Include="img\20150705_105307_Richtone%28HDR%29.jpg" />
     <Content Include="img\abstract-paper-backgrounds-powerpoint.jpg" />
     <Content Include="img\fox.jpg" />
+    <Content Include="img\ProfilePicAlt.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -268,9 +275,14 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Manage\ChangeProfilePicture.cshtml" />
+    <Content Include="Views\PhotoArticle\List.cshtml" />
+    <Content Include="Views\PhotoArticle\Create.cshtml" />
+    <Content Include="Views\PhotoArticle\Yourlist.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="PhotoArticles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

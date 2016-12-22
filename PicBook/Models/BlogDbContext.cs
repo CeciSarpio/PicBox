@@ -14,7 +14,7 @@ namespace PicBook.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-
+        public virtual IDbSet<PhotoArticle> PhotoArticles { get; set; }
         public static BlogDbContext Create()
         {
             return new BlogDbContext();
